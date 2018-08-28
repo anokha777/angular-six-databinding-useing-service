@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../services/user/user.service';
+// import { CounterService } from '../services/counter/counter.service';
 
 @Component({
   selector: 'app-active-user',
@@ -16,5 +17,6 @@ export class ActiveUserComponent implements OnInit {
 
   setToInactive(id: number) {
     this.userService.setToInactive(id);
+    // this.counterService.incrementActiveToInactive();
   }
 }
