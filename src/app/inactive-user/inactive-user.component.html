@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-xs-12">
+      <h1>Inactive Users</h1>
+      <div *ngFor="let inactiveUser of inactiveUsers, let i = index">
+        <p>{{ inactiveUser }} <a href="#" (click)="setToActive(i)"> Set to active</a></p>
+      </div>
+    </div>
+  </div>
